@@ -1,10 +1,10 @@
 #' \code{Obtain the first several PCs}
 #'
 #'
-#' @param Z The `n x m` genotype matrix of data. [matrix, ]
-#' @param p The first n number of PCs. [num, default p=3]
+#' @param Z The `n x m` genotype matrix of data. [matrix, NULL]
+#' @param p The first n number of PCs. [num, p=3]
 #'
-#' @return return a batch of shell scripts.
+#' @return return a `n x p` matrix.
 #'
 #' @examples
 #' Z <- fread("input/Z_matrix.txt", header=T,data.table=FALSE)
