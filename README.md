@@ -23,22 +23,17 @@ Install [devtools](https://github.com/hadley/devtools) first, and then use `devt
 
 ```R
 #install.packages(devtools)
-devtools::install_github("yangjl/huskeR")
-
-# OR specify a path to install
-library(devtools)
-withr::with_libpaths(new = "/home/jyanglab/jyang21/R/x86_64-pc-linux-gnu-library/3.5", install_github('yangjl/huskeR'))
-
-library(huskeR, lib.loc="/home/jyanglab/jyang21/R/x86_64-pc-linux-gnu-library/3.5")
+devtools::install_github("jyanglab/GMA")
 ```
 
 List all the functions in the package and find help.
 
 ```R
+library("GMA")
 ## list all the functions
-ls(getNamespace("huskeR"), all.names=TRUE)
+ls(getNamespace("GMA"), all.names=TRUE)
 ## help info for a given function
-?run_fastq_qc
+?run_GMA
 ```
 
 
@@ -46,7 +41,7 @@ ls(getNamespace("huskeR"), all.names=TRUE)
 ## License
 
 It is a free and open source software, licensed under [GPLv3](LICENSE).
-This is an ongoing research project from **Yang Lab**. It was intended for internal lab usage. It has not been extensively tested. Use at your own risk.
+This is an ongoing research project from **[J. Yang Lab](https://jyanglab.com/)**. It was intended for internal lab usage. It has not been extensively tested. Use at your own risk.
 
 
 

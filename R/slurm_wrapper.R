@@ -21,7 +21,7 @@
 #'            email=NULL, runinfo = c(FALSE, "bigmemh", 1))
 #'
 #' @export
-run_gma <- function(ti=2, cutoff_pm=0.05, ncores=12,
+run_GMA <- function(ti=2, cutoff_pm=0.05, ncores=12,
                               phenofile = "data/geno_trait.txt",
                               genofile = "largedata/geno/allchr_bisnp_n282_snpid_maf01_geno2_pruned_NA_0_matrix.txt",
                               rnafile = "largedata/RNA-seq/filtered_GRoot.csv",
